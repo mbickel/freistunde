@@ -160,6 +160,10 @@ main {
   background-color: #D92C60;
 }
 
+.background-primary-gradient {
+  background: linear-gradient(137.99deg, #A10037 0%, #D92C60 100%), #D92C60;
+}
+
 .background-primary-dark {
   background-color: #A10037;
 }
