@@ -1,3 +1,5 @@
+/* general */
+
 body, html {
   font-size: 10px;
 }
@@ -43,6 +45,8 @@ a {
 main {
   flex: 1;
 }
+
+/* first section */
 
 #landing-page {
     width: 100%;
@@ -106,10 +110,6 @@ main {
     border: 10px solid #fff;
 }
 
-#rest {
-    margin-top: 100vh;
-}
-
 #slogan {
   margin-top: 4.0rem;
   margin-left: -320px;
@@ -159,6 +159,34 @@ main {
   color: #fff;
 }
 
+/* infoboxes */
+
+#infobox-how {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.infobox-left {
+  flex: 6;
+  min-width: 600px;
+}
+
+.infobox-right {
+  flex: 4;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.6rem;
+  background-color: #fff;
+  margin-left: 4.8rem;
+}
+
+.infobox-right img {
+  width: 100%;
+}
+
 .infobox-step {
   display: flex;
   flex-direction: row;
@@ -169,14 +197,18 @@ main {
   margin-right: 0.8rem;
 }
 
-#impressum {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-}
+/* faq */
 
 .collapsible {
   box-shadow: none;
   margin: 0;
+}
+
+/* impressum */
+
+#impressum {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 /* standard styles */ 
