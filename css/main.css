@@ -38,32 +38,47 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-items: center;
 }
 
 #left {
     flex: 1;
-    padding-left: 240px;
-    padding-right: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
+#logo {
+  align-self: stretch;
+  padding: 2.4rem 3.2rem;
+  text-align: right;
+}
+
+#logo img {
+  width: 100px;
+}
+
 #hashtag {  
-    text-align: left;
-    font-family: "Neucha";
-    margin-bottom: 2.4rem;
+  text-align: left;
+  font-family: "Neucha";
+  margin-bottom: 2.4rem;
+}
+
+#hashtag img {
+  width: 100px;
 }
 
 #hashtag:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #teaser-text {
   font-family: cursive;
   font-family: "Caveat";
   position: absolute;
-  top: 40px;
-  right: 640px;
+  top: 160px;
+  right: 625px;
 }
 
 #teaser-text img {
@@ -85,7 +100,7 @@ main {
 
 #slogan {
   margin-top: 4.0rem;
-  margin-left: -240px;
+  margin-left: -320px;
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
   font-family: "Neucha";
@@ -113,9 +128,9 @@ main {
 
 #learn-more {
   text-align: right;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  align-self: flex-end;
+  padding-right: 2.4rem;
+  padding-bottom: 0.8rem;
 }
 
 #learn-more a {
@@ -237,8 +252,8 @@ main {
     font-size: 4.0rem;
   }
 
-  #left {
-    padding: 4rem;
+  #logo img {
+    width: 80px;
   }
 
   #slogan {
