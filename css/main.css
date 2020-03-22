@@ -85,7 +85,7 @@ main {
   width: 100px;
 }
 
-#hashtag:hover {
+#hashtag a:hover {
   text-decoration: underline;
 }
 
@@ -219,7 +219,7 @@ main {
 }
 
 .text-size-large {
-  font-size: 9.6rem;
+  font-size: 8.8rem;
 }
 
 .text-size-small {
@@ -297,6 +297,12 @@ main {
   }
 }
 
+@media only screen and (min-width: 1325px){
+  .infobox-right {
+    margin-left: 0;
+  }
+}
+
 @media only screen and (max-width: 1024px){
   h1 {
     font-size: 7.2rem;
@@ -327,7 +333,7 @@ main {
   }
 
   .text-size-large {
-    font-size: 7.2rem;
+    font-size: 6.4rem;
   }
 
   .text-standard-size {
