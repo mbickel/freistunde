@@ -2,6 +2,14 @@ body, html {
   font-size: 10px;
 }
 
+ul {
+  list-style-type: disc;
+}
+
+.collapsible-body ul {
+  padding-left: 3.2rem;
+}
+
 h1, h2 {
   font-family: "Neucha";
 }
@@ -16,6 +24,10 @@ h2 {
   font-size: 4.8rem;
   margin-top: 0;
   margin-bottom: 2.4rem;
+}
+
+h3 {
+  margin: 0;
 }
 
 a {
@@ -56,7 +68,7 @@ main {
 }
 
 #logo img {
-  width: 100px;
+  width: 150px;
 }
 
 #hashtag {  
@@ -77,7 +89,7 @@ main {
   font-family: cursive;
   font-family: "Caveat";
   position: absolute;
-  top: 160px;
+  top: 200px;
   right: 625px;
 }
 
@@ -145,6 +157,16 @@ main {
 
 #learn-more i {
   color: #fff;
+}
+
+.infobox-step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infobox-step i {
+  margin-right: 0.8rem;
 }
 
 #impressum {
