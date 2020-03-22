@@ -1,5 +1,15 @@
+/* general */
+
 body, html {
   font-size: 10px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.collapsible-body ul {
+  padding-left: 3.2rem;
 }
 
 h1, h2 {
@@ -18,8 +28,16 @@ h2 {
   margin-bottom: 2.4rem;
 }
 
+h3 {
+  margin: 0;
+}
+
 a {
   color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #container {
@@ -32,47 +50,90 @@ main {
   flex: 1;
 }
 
+/* first section */
+
 #landing-page {
     width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-items: center;
 }
 
 #left {
-    flex: 6;
-    margin: auto 240px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-#hashtag {  
-    text-align: left;
-    font-family: "Neucha";
-    margin-bottom: 2.4rem;
+#logo {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.2rem;
+  padding-bottom: 2.4rem;
+  /*padding: 0.8rem 3.2rem;*/
 }
 
-#hashtag:hover {
-    text-decoration: underline;
+#logo #großepause {
+  width: 200px;
+}
+
+#logo #wirvsvirus {
+  height: 50px;
+  margin-right: 2.4rem;
+}
+
+#hashtag {  
+  text-align: left;
+  font-family: "Neucha";
+  margin-bottom: 2.4rem;
+}
+
+#hashtag img {
+  width: 100px;
+}
+
+.hashtag {
+  font-family: cursive;
+  font-family: "Neucha";
+}
+
+.hashtag a:hover {
+  text-decoration: underline;
+}
+
+#teaser-text {
+  font-family: cursive;
+  font-family: "Caveat";
+  position: absolute;
+  top: 70px;
+  right: 625px;
+}
+
+#teaser-text img {
+  width: 150px;
+  margin-left: 60px;
 }
 
 #media {
-    flex: 4;
     align-self: stretch;
-    min-width: 600px;
+    width: 600px;
     background-color: #fff;
-}
-
-#rest {
-    margin-top: 100vh;
+    min-height: 32rem;
+    border: 10px solid #fff;
 }
 
 #slogan {
-  margin: 4.0rem auto auto -240px;
-  padding: 0.8rem 2.4rem 0.8rem 240px;
+  margin-top: 4.0rem;
+  margin-left: -320px;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
   font-family: "Neucha";
   background-color: #FFF;
   text-align: right;
@@ -80,17 +141,93 @@ main {
   border-bottom-right-radius: 30px;
 }
 
-#impressum {
-  padding: 0.8rem 8rem;
+#social-media-icons {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: row;
 }
+
+#social-media-icons img {
+  width: 56px;
+  height: 56px;
+  margin-right: 1.6rem;
+}
+
+#social-media-icons img:hover {
+  opacity: 0.8;
+}
+
+#learn-more {
+  text-align: right;
+  align-self: flex-end;
+  padding-right: 2.4rem;
+  padding-bottom: 0.8rem;
+}
+
+#learn-more a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#learn-more a:hover {
+  opacity: 0.8;
+}
+
+#learn-more i {
+  color: #fff;
+}
+
+/* infoboxes */
+
+#infobox-how {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.infobox-left {
+  flex: 6;
+  min-width: 600px;
+}
+
+.infobox-right {
+  flex: 4;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.6rem;
+  background-color: #fff;
+  margin-left: 4.8rem;
+}
+
+.infobox-right img {
+  width: 100%;
+}
+
+.infobox-step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infobox-step i {
+  margin-right: 0.8rem;
+}
+
+/* faq */
 
 .collapsible {
   box-shadow: none;
   margin: 0;
 }
 
-.collapsible-header, .collapsible-body {
-  padding: 0.8rem 8rem;
+/* impressum */
+
+#impressum {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 /* standard styles */ 
@@ -101,7 +238,7 @@ main {
 }
 
 .text-size-large {
-  font-size: 9.6rem;
+  font-size: 8.0rem;
 }
 
 .text-size-small {
@@ -116,12 +253,21 @@ main {
   color: #FCF7F8;
 }
 
+.text-special-font {
+  font-family: cursive;
+  font-family: "Neucha";
+}
+
 .background-light {
   background-color: #FCF7F8;
 }
 
 .background-primary {
   background-color: #D92C60;
+}
+
+.background-primary-gradient {
+  background: linear-gradient(137.99deg, #A10037 0%, #D92C60 100%), #D92C60;
 }
 
 .background-primary-dark {
@@ -138,17 +284,108 @@ main {
   width: 100%;
 }
 
-.infobox {
-  padding: 9.6rem 8rem;
+.padding-horizontal {
+  padding-left: 16rem;
+  padding-right: 16rem;
 }
 
-.section-header {
-  padding: 8rem 8rem;
+.padding-vertical {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
-@media only screen and (max-width: 1024px) {
-  #hashtag {
-    font-size: 12px;
+/* imprint.html */
+
+#impressum-container {
+  padding: 8rem 16rem;
+}
+
+#impressum-container a {
+  color: #333333;
+}
+
+@media only screen and (min-width: 2560px){
+  .padding-horizontal {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+}
+
+@media only screen and (max-width: 1550px){
+  #left {
+    min-width: 100%;
+  }
+
+  .padding-horizontal {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  #teaser-text {
+    display: none;
+  }
+
+  #media {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media only screen and (min-width: 1325px){
+  .infobox-right {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  h1 {
+    font-size: 7.2rem;
+  }
+
+  h2 {
+    font-size: 4.0rem;
+  }
+
+  #logo #großepause {
+    width: 150px;
+  }
+
+  #slogan {
+    margin-left: -40px;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .padding-horizontal {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .padding-vertical {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .text-size-large {
+    font-size: 6.4rem;
+  }
+
+  .text-standard-size {
+    font-size: 1.8rem;
+  }
+
+  .text-size-small {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .infobox-left, .infobox-right {
+    min-width: 100%;
+  }
+
+  .infobox-right {
+    margin-left: 0px;
   }
 }
 
