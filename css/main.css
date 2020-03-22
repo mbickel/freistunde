@@ -36,6 +36,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -234,7 +238,7 @@ main {
 }
 
 .text-size-large {
-  font-size: 8.8rem;
+  font-size: 8.0rem;
 }
 
 .text-size-small {
@@ -288,6 +292,16 @@ main {
 .padding-vertical {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+/* imprint.html */
+
+#impressum-container {
+  padding: 8rem 16rem;
+}
+
+#impressum-container a {
+  color: #333333;
 }
 
 @media only screen and (min-width: 2560px){
