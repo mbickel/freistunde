@@ -26,6 +26,10 @@ h2 {
   margin-bottom: 2.4rem;
 }
 
+h3 {
+  margin: 0;
+}
+
 a {
   color: #fff;
 }
@@ -153,6 +157,16 @@ main {
 
 #learn-more i {
   color: #fff;
+}
+
+.infobox-step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infobox-step i {
+  margin-right: 0.8rem;
 }
 
 #impressum {
