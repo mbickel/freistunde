@@ -67,12 +67,22 @@ main {
 
 #logo {
   align-self: stretch;
-  padding: 2.4rem 3.2rem;
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.2rem;
+  padding-bottom: 2.4rem;
+  /*padding: 0.8rem 3.2rem;*/
 }
 
-#logo img {
-  width: 150px;
+#logo #großepause {
+  width: 200px;
+}
+
+#logo #wirvsvirus {
+  height: 50px;
+  margin-right: 2.4rem;
 }
 
 #hashtag {  
@@ -85,7 +95,12 @@ main {
   width: 100px;
 }
 
-#hashtag a:hover {
+.hashtag {
+  font-family: cursive;
+  font-family: "Neucha";
+}
+
+.hashtag a:hover {
   text-decoration: underline;
 }
 
@@ -93,7 +108,7 @@ main {
   font-family: cursive;
   font-family: "Caveat";
   position: absolute;
-  top: 200px;
+  top: 70px;
   right: 625px;
 }
 
@@ -234,6 +249,11 @@ main {
   color: #FCF7F8;
 }
 
+.text-special-font {
+  font-family: cursive;
+  font-family: "Neucha";
+}
+
 .background-light {
   background-color: #FCF7F8;
 }
@@ -312,8 +332,8 @@ main {
     font-size: 4.0rem;
   }
 
-  #logo img {
-    width: 80px;
+  #logo #großepause {
+    width: 150px;
   }
 
   #slogan {
