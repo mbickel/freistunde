@@ -43,7 +43,7 @@ main {
 }
 
 #left {
-    flex: 6;
+    flex: 1;
     padding-left: 240px;
     padding-right: 240px;
   }
@@ -58,12 +58,25 @@ main {
     text-decoration: underline;
 }
 
+#teaser-text {
+  font-family: cursive;
+  font-family: "Caveat";
+  position: absolute;
+  top: 40px;
+  right: 640px;
+}
+
+#teaser-text img {
+  width: 150px;
+  margin-left: 60px;
+}
+
 #media {
-    flex: 4;
     align-self: stretch;
-    /*min-width: 600px;*/
+    width: 600px;
     background-color: #fff;
     min-height: 32rem;
+    border: 10px solid #fff;
 }
 
 #rest {
@@ -195,7 +208,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1550px){
   #left {
     min-width: 100%;
   }
@@ -203,6 +216,15 @@ main {
   .padding-horizontal {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  #teaser-text {
+    display: none;
+  }
+
+  #media {
+    width: 100%;
+    height: 600px;
   }
 }
 
