@@ -25,6 +25,17 @@
 
 <body>
   <div id="container">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '569421307001628',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v6.0'
+        });
+      };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
     <header>
       <div id="landing-page" class="background-primary-gradient">
@@ -42,7 +53,7 @@
             </div>
             
             <div id="hashtag-text" class="text-standard-size text-light">
-              <p>Es war noch nie so einfach, Menschenleben zu retten: Teile diesen Hashtag mit so vielen Leuten wie möglich, bleib täglich (zusätzlich zu den geltenden Ausgangsbeschränkungen) zwischen 09:30 und 11:00 daheim und genieß deine 
+              <p>Es war noch nie so einfach, Menschenleben zu retten: Teile diesen Hashtag mit so vielen Leuten wie möglich, bleib täglich <b>zusätzlich zur geltenden Kontaktsperre</b> zwischen 09:30 und 11:00 daheim und genieß deine 
                 <span class="hashtag"><a href="https://twitter.com/hashtag/großepause" target="_blank">#großepause</a></span>.
               </p> 
               <p>So schaffen wir einen risikoarmen Zeitraum für die 
@@ -62,8 +73,10 @@
                 </a>
               </div>
   
-              <div class="sm-icon" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small">
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="./images/facebook.png" alt="Facebook"></a>
+              <div class="sm-icon" data-href="https://grossepause.com" data-layout="button_count" data-size="small">
+                <!--<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="./images/facebook.png" alt="Facebook"></a>-->
+                <!--<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgrossepause.com%2F&amp;src=sdkpreparse;" class="fb-xfbml-parse-ignore"><img src="./images/facebook.png" alt="Facebook"></a>-->
+                <a href="#" onclick="shareOnFacebook()"><img src="./images/facebook.png" alt="Facebook"></a>
               </div>
   
               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -274,8 +287,6 @@
 
   </div>
 
-  <div id="fb-root"></div>  
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v6.0"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./js/main.js"></script>
 
