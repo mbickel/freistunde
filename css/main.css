@@ -114,11 +114,11 @@ main {
   position: absolute;
   top: 70px;
   right: 625px;
+  text-align: right;
 }
 
 #teaser-text img {
   width: 150px;
-  margin-left: 60px;
 }
 
 #media {
