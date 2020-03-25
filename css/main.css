@@ -13,7 +13,7 @@ ul {
 }
 
 h1, h2 {
-  font-family: "Neucha";
+  font-family: 'Neucha', cursive;
 }
 
 h1 {
@@ -42,6 +42,7 @@ a img, a i {
 }
 
 a:hover {
+  text-decoration: underline;
   opacity: 0.8;
 }
 
@@ -96,8 +97,16 @@ main {
 
 #hashtag {  
   text-align: left;
-  font-family: "Neucha";
+  font-family: 'Neucha', cursive;
   margin-bottom: 2.4rem;
+}
+
+#hashtag a {
+  text-decoration: none;
+}
+
+#hashtag a:hover {
+  text-decoration: underline;
 }
 
 #hashtag img {
@@ -105,8 +114,7 @@ main {
 }
 
 .hashtag {
-  font-family: cursive;
-  font-family: "Neucha";
+  font-family: 'Neucha', cursive;
 }
 
 .hashtag a:hover {
@@ -139,7 +147,7 @@ main {
   margin-left: -320px;
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
-  font-family: "Neucha";
+  font-family: 'Neucha', cursive;
   background-color: #FFF;
   text-align: right;
   border-top-right-radius: 30px;
@@ -260,8 +268,7 @@ main {
 }
 
 .text-special-font {
-  font-family: cursive;
-  font-family: "Neucha";
+  font-family: 'Neucha', cursive;
 }
 
 .background-light {
